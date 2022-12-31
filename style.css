@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  width: 1000px;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 100px 30px 20px 30px;
+  position: relative;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.key {
+  cursor: pointer;
+}
+
+.white-keys .key {
+  display: flex;
+  height: 280px;
+  width: calc(100% / 14);
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 5px 0 black;
+  border-radius: 0 0 5px 5px;
+}
+
+.white-keys .key:active {
+  height: 285px;
+  box-shadow: 0 2px 0 black, inset 0 0 5px black;
+  transform: translateY(5px);
+  margin-top: -5px;
+  background-color: #eee;
+}
+
+.black-keys {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.black-keys .key {
+  background-color: black;
+  width: 40px;
+  height: 180px;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
+.black-keys .key:active {
+  background-color: #444;
+  height: 182px;
+}
+
+.black-keys .key:nth-child(1) {
+  left: 76px;
+}
+
+.black-keys .key:nth-child(2) {
+  left: 144px;
+}
+
+.black-keys .key:nth-child(3) {
+  left: 278px;
+}
+
+.black-keys .key:nth-child(4) {
+  left: 346px;
+}
+
+.black-keys .key:nth-child(5) {
+  left: 413px;
+}
+
+.black-keys .key:nth-child(6) {
+  left: 548px;
+}
+
+.black-keys .key:nth-child(7) {
+  left: 614px;
+}
+
+.black-keys .key:nth-child(8) {
+  left: 680px;
+}
+
+.black-keys .key:nth-child(9) {
+  left: 815px;
+}
+
+.black-keys .key:nth-child(10) {
+  left: 883px;
+}
